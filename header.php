@@ -188,9 +188,7 @@
         </nav>
         <!-- End of Topbar -->
 
-            </div>
-          </div>
+        <div class="container-fluid">
 
-        </div>
-        <!-- /.container-fluid -->
-        </div>
+        
+        
