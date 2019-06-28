@@ -31,7 +31,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <img class="" style="width: 60px;" src="img/logo.png" alt="">
         </div>
         <div class="sidebar-brand-text mx-3">Office Jr.</div>
       </a>
@@ -182,6 +182,10 @@
 
         </nav>
 
+        </nav>
+        <!-- End of Topbar -->
 
-        
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
         <!-- End of Topbar -->

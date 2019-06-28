@@ -1,15 +1,14 @@
-         </div>
+      </div>
         <!-- /.container-fluid -->
 
       </div>
       <!-- End of Main Content -->
 
-
-   <!-- Footer -->
+      <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Office Jr. 2019</span>
+            <span>Copyright &copy; Office Jr. - 2019</span>
           </div>
         </div>
       </footer>
@@ -31,37 +30,37 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Deseja sair?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Deseja realmente sair?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">
-            Selecione "Sair" se você estiver pronto para terminar sua sessão atual.</div>
+        <div class="modal-body">Selecione "sair" se você está pronto(a) para finalizar a sua sessão atual.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="login.html">Sair</a>
+          <a class="btn btn-primary" href="../../controller/usuario/logout.php">Sair</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../view/js/validator.min.js"></script>
+  <script src="../../view/vendor/jquery/jquery.min.js"></script>
+  <script src="../../view/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../../view/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="../../view/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="../../view/vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="../../view/js/demo/chart-area-demo.js"></script>
+  <script src="../../view/js/demo/chart-pie-demo.js"></script>
 
 </body>
 
