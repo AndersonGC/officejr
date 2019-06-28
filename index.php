@@ -1,7 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php' ?>
 
-        <!--DASHBOARD-->
+    
+      <!-- End of Main Content -->
 
-
-
-<?php include 'footer.php'; ?>
+<?php include 'footer.php' ?>
