@@ -1,44 +1,41 @@
 <?php include 'header.php' ?>
 
-    
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-<h1 class="h3 mb-0 text-gray-800">Criar Projeto</h1>
-</div>
+ <h1>Projetos</h1>
 
-<!-- Content Row -->
-<div class="col-md-8"> 
-<div class="row">
+ <a href="adicionarProjeto.php" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Adicionar projeto</a>
 
-  	<div class = "post">
-      <form class="form-horizontal" method="POST" action="../../controller/projeto/cadastrarProjeto.php" enctype="multipart/form-data" data-toggle="validator">
 
-      <!--início do campo do formulário-->
-        <div class="form-group required">
-        <label class="control-label col-sm-20" for="nome">Nome do Projeto:</label>
-        <div class="col-sm-30">
-          <input type="text" class="form-control" id="nome" name="nome" value="" required>
-        </div> <!--fim col-sm-5-->
-        </div> <!--fim form-group-->
-      <!--fim do campo do formulário-->
-      
-      <!--início do campo do formulário-->
-        <div class="form-group required">
-          <label class="control-label" for="descricao">Descrição:</label>
-          <div class="col-sm-30">
-            <textarea rows="4" cols="50" class="form-control" id="descricao" name="descricao" required>
-    		    </textarea>
-          </div>
-        </div> <!--fim form-group-->
-      <!--fim do campo do formulário-->
+ <br>
+ </br>
+   <?php
+   include 'conexao.php';
+    //string com o comando sql a ser executado para buscar as cidades
+    $sql = "SELECT * FROM projeto_projeto  ORDER BY nome ASC";
+    //executa o comando sql no banco de dados
+    $qr = $conn->query($sql);
+    //enquanto existir registro retornado na consulta, carrega no dropdown de cidade
+    while ($linha = $qr->fetch_array()) { 
+    ?>
 
-      <div>
-        <input type="submit" class="btn btn-success" name="criar_projeto" value="Criar Projeto"></input>
-      </div> <!--fim col-sm-8-->
+    <div class="card border mb-3" style="max-width: 18rem;">
+        <div class="card-header"><h5><i class= "fas fa-user"></i>  <?php echo $linha['nome']?></h5></div>
+        <div class="card-body text-secondary">
+        <p class="card-text"><i class= "fas fa-phone"></i>  <?php echo $linha['descricao']?><br>
+        <i class= "fas fa-book"></i>  <?php echo $linha['nome']?> </p>
 
-      </form>
-    </div> <!-- fim da div post -->
-    <!-- fim do post -->  
-</div>
-</div>
+        <a href= "editarProjeto.php?cpf=<?php echo $linha['codProjeto']; ?> " class=" btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+
+        <a href= "removerProjeto.php?codProjeto=<?php echo $linha['codProjeto']; ?> " class=" btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+
+
+
+      </div>
+    </div>
+
+  <?php
+  } // fim while
+  ?>
+ 
+
 
 <?php include 'footer.php' ?>
