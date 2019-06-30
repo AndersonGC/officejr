@@ -23,7 +23,12 @@
 				<p class="card-text"><i class= "fas fa-phone"></i>  <?php echo $linha['telefone']?><br>
 				<i class= "fas fa-book"></i>  <?php echo $linha['curso']?> </p>
 
-				 <a href="removerMembro.php" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+				<a href= "editarMembro.php?cpf=<?php echo $linha['cpf']; ?> " class=" btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+
+				<a href= "removerMembro.php?cpf=<?php echo $linha['cpf']; ?> " class=" btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+
+
+
 			</div>
 		</div>
 
