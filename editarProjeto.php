@@ -22,7 +22,7 @@
 
   <div class="form-group">
     <label for="nome">Nome:</label>
-    <input type="text" class="form-control" id="nome" name= "nome" value="<?php echo $linha['nome']; ?>" >
+    <input type="text" class="form-control" id="nomeProjeto" name= "nomeProjeto" value="<?php echo $linha['nomeProjeto']; ?>" >
   </div>
 
   <div class="form-group">

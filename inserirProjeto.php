@@ -6,13 +6,13 @@
 	$prazoDeEntrega = $_POST["prazoDeEntrega"];
 	$grauDificuldade = $_POST["grauDificuldade"];
 	$Cliente_codCliente = $_POST["Cliente_codCliente"];
-	$nome = $_POST["nome"];
+	$nomeProjeto = $_POST["nomeProjeto"];
 
 	$dataP = explode('/', $prazoDeEntrega);
 	$dataBanco = $dataP[2].'-'.$dataP[1].'-'.$dataP[0];
 
 
-	$SQL = "INSERT INTO projeto_projeto (descricao, statusProjeto, precoServico, prazoDeentrega, dataConclusao, grauDificuldade, Cliente_codCliente, nome) VALUES ('".$descricao."','".$statusProjeto."',".$precoServico.", '".$dataBanco."' ,null ,'".$grauDificuldade."',".$Cliente_codCliente.",'".$nome."')"; 
+	$SQL = "INSERT INTO projeto_projeto (descricao, statusProjeto, precoServico, prazoDeentrega, dataConclusao, grauDificuldade, Cliente_codCliente, nomeProjeto) VALUES ('".$descricao."','".$statusProjeto."',".$precoServico.", '".$dataBanco."' ,null ,'".$grauDificuldade."',".$Cliente_codCliente.",'".$nomeProjeto."')"; 
 
 	if ($conn->query($SQL) === TRUE){
 echo "<script>alert('Projeto cadastrado com sucesso.');</script>";

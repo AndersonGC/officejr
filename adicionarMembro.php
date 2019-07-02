@@ -61,12 +61,12 @@
 	           <?php
 	           include 'conexao.php';
 					//string com o comando sql a ser executado para buscar as cidades
-					$sql = "SELECT * FROM projeto_cidade  ORDER BY nome ASC";
+					$sql = "SELECT * FROM projeto_cidade  ORDER BY nomeCidade ASC";
 					//executa o comando sql no banco de dados
 					$qr = $conn->query($sql);
 					//enquanto existir registro retornado na consulta, carrega no dropdown de cidade
 	            while ($linha = $qr->fetch_assoc()) { 
-	                echo '<option value="' . $linha['codigo'] . '">' . $linha['nome'] . '</option>';
+	                echo '<option value="' . $linha['codigo'] . '">' . $linha['nomeCidade'] . '</option>';
 	            } // fim while
 				?>
 	       </select>

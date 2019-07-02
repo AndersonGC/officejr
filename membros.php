@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
- <h1>Membros da Office Jr.:</h1>
+ <h1>Membros da Office Jr.</h1>
 
  <a href="adicionarMembro.php" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Adicionar membro</a>
 

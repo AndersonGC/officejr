@@ -8,8 +8,8 @@
  <form class="form-horizontal" data-toggle="validator" method = "POST" action="inserirProjeto.php">
 
   <div class="form-group">
-    <label for="nome">Nome:</label>
-    <input required type="text" class="form-control" id="nome" name= "nome" >
+    <label for="nomeProjeto">Nome:</label>
+    <input required type="text" class="form-control" id="nomeProjeto" name= "nomeProjeto" >
   </div>
 
   <div class="form-group">
