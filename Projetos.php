@@ -22,7 +22,8 @@
     <div class="card border mb-3" style="max-width: 18rem;">
         <div class="card-header"><h5><i class= "fas fa-folder"></i>  <?php echo $linha['nome']?></h5></div>
         <div class="card-body text-secondary">
-          <p class="card-text"><i class="fas fa-cog"></i>  <?php echo $linha['statusProjeto']?>                                    <a href="" style="color: red" data-toggle="modal" data-target="#situacao-{$estoria->getId()}" title="Editar status">
+          <p class="card-text"><i class="fas fa-cog"></i>  <?php echo $linha['statusProjeto']?>                                    
+          <a href="" style="color: red" data-toggle="modal" data-target="#status-<?php echo $linha['codProjeto']; ?>" title="Editar status">
           <i class="fas fa-edit"></i>
           </a><br>
 
@@ -34,7 +35,7 @@
         <a href= "removerProjeto.php?codProjeto=<?php echo $linha['codProjeto']; ?> " class=" btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
 
         <!-- inicio modal -->
-        <div class="modal fade" id="situacao-{$estoria->getId()}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="status-<?php echo $linha['codProjeto']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -46,7 +47,7 @@
                 </button>
                 </div>
                 <div class="modal-body">
-
+                <form action="" data-toggle="validator">
                 <label class="control-label" for="situacao">Selecione o status:</label>
                 <select class="form-control" id=situacao name="situacao">
                 <option value="1">Não Iniciada</option>

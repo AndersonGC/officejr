@@ -5,11 +5,11 @@
 
 <div class="row">
  <div class="col-sm-6">
- <form class="form-horizontal" method = "POST" action="inserirProjeto.php">
+ <form class="form-horizontal" data-toggle="validator" method = "POST" action="inserirProjeto.php">
 
   <div class="form-group">
     <label for="nome">Nome:</label>
-    <input type="text" class="form-control" id="nome" name= "nome" >
+    <input required type="text" class="form-control" id="nome" name= "nome" >
   </div>
 
   <div class="form-group">
